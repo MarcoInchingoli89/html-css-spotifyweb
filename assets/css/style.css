@@ -10,10 +10,26 @@ body {
     max-height: 100vh;
 }
 
+/* Colors Palette */
+
+:root {
+    --dark--: #000000;
+    --lightdark--: #080B12;
+    --body--: #141922;
+    --player: #282828;
+    --primary: #FFFFFF;
+}
+
 /* Main */
 
 .app_container {
     flex-wrap: wrap;
+}
+
+.sidebar {
+    background-color: var(--dark--);
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* Debug */
@@ -24,15 +40,24 @@ body {
 }
 
 .debug .sidebar {
-    background-color: rgb(255, 0, 0);
     height: calc(100vh - 100px);
-    width: 15%;
+    width: 10%;
+}
+
+.debug .sidebar_header {
+    background-color: brown;
+    height: 10%;
+}
+
+.debug .sidebar_footer {
+    background-color: crimson;
+    height: 10%;
 }
 
 .debug .app_body {
     background-color: rgb(127, 255, 212);
     height: calc(100vh - 100px);
-    width: 85%;
+    width: 90%;
 }
 
 .debug .player {
