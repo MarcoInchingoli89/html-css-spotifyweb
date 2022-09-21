@@ -30,9 +30,10 @@
 
 .app_body {
     background-color: var(--body--);
+    overflow: auto;
 }
 
-.app_body .app_body_header {
+.app_body_header {
     background-color: var(--lightdark--);
 }
 
@@ -52,9 +53,9 @@
     width: 10%;
 }
 
-.debug .sidebar_header {
+.debug .sidebar_body {
     background-color: brown;
-    height: 10%;
+    height: 50%;
 }
 
 .debug .sidebar_footer {
@@ -68,6 +69,7 @@
 }
 
 .debug .app_body_header {
+    width: 100%;
     height: 10%;
 }
 
