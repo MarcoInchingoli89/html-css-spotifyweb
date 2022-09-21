@@ -5,3 +5,44 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    max-height: 100vh;
+}
+
+/* Main */
+
+.app_container {
+    flex-wrap: wrap;
+}
+
+/* Debug */
+
+.debug .app_container {
+    background-color: rgb(255, 166, 0);
+    height: 100vh;
+}
+
+.debug .sidebar {
+    background-color: rgb(255, 0, 0);
+    height: calc(100vh - 100px);
+    width: 15%;
+}
+
+.debug .app_body {
+    background-color: rgb(127, 255, 212);
+    height: calc(100vh - 100px);
+    width: 85%;
+}
+
+.debug .player {
+    background-color: rgb(0, 0, 255);
+    height: 100px;
+    width: 100%;
+}
+
+/* Utilities */
+
+.d-flex {
+    display: flex;
+}
