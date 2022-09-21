@@ -26,13 +26,14 @@ body {
     --lightdark--: #080B12;
     --body--: #141922;
     --player: #282828;
+    --sidebartext--: #5E6267;
     --primary: #FFFFFF;
 }
 
 /* Main */
 
 main {
-    height: calc(100vh - 100px); 
+    /* height: calc(100vh - 100px);  */
 }
 
 .app_header {
@@ -64,6 +65,15 @@ main {
     background-color: var(--dark--);
     flex-direction: column;
     justify-content: space-between;
+}
+
+.sidebar .sidebar_menu, .sidebar_playlist, .sidebar_footer {
+    color: var(--sidebartext--);
+}
+
+.border_mini {
+    border-bottom: 1px solid var(--sidebartext--);
+    margin: auto;
 }
 
 .app_body {
@@ -101,7 +111,7 @@ footer {
     height: calc(100vh - 100px);
 }
 
-.debug .sidebar_body {
+/* .debug .sidebar_body {
     background-color: brown;
     height: 50%;
 }
@@ -109,7 +119,7 @@ footer {
 .debug .sidebar_footer {
     background-color: crimson;
     height: 10%;
-}
+} */
 
 .debug .app_body {
     width: 90%;
