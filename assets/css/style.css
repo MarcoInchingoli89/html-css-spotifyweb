@@ -6,10 +6,6 @@
     box-sizing: border-box;
 }
 
-body {
-    max-height: 100vh;
-}
-
 /* Colors Palette */
 
 :root {
@@ -22,7 +18,7 @@ body {
 
 /* Main */
 
-.app_container {
+.wrapper {
     flex-wrap: wrap;
 }
 
@@ -46,7 +42,7 @@ body {
 
 /* Debug */
 
-.debug .app_container {
+.debug .wrapper {
     background-color: rgb(255, 166, 0);
     height: 100vh;
 }
@@ -75,6 +71,17 @@ body {
     height: 10%;
 }
 
+.debug .menu {
+    height: 50px;
+    background-color: darkgreen;
+}
+
+.debug [class^="col"] {
+    margin: 2rem 1rem;
+    height: 250px;
+    border: 1px solid red;
+}
+
 .debug .player {
     height: 100px;
     width: 100%;
@@ -84,4 +91,8 @@ body {
 
 .d-flex {
     display: flex;
+}
+
+.col_2 {
+    width: calc((100% / 12) *2);
 }
