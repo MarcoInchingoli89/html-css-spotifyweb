@@ -43,11 +43,6 @@ body {
     width: 100%;
 }
 
-.sidebar_header img {
-    width: 10rem;
-    padding-top: 0.2rem;
-}
-
 .btn {
     border-radius: 1.6rem;
     border: 1px solid var(--primary);
@@ -59,7 +54,6 @@ body {
     background-color: var(--dark--);
     text-decoration: none;
   }
-
 
 .sidebar {
     background-color: var(--dark--);
@@ -74,10 +68,49 @@ body {
     color: var(--sidebartext--);
 }
 
+.sidebar_header {
+    font-size: 0.6rem;
+}
+
+.sidebar_header .logo {
+    width: 10rem;
+    padding: 0.8rem;
+}
+
+.sidebar_header .sidebar_menu img {
+    width: 2.3rem;
+    padding: 0.5rem;
+    filter: invert(0.5);
+    vertical-align: middle;
+}
+
+.sidebar_playlist {
+    flex-direction: column;
+    gap: 0.8rem;
+    padding-left: 0.8rem;
+}
+
+.sidebar_playlist h5 {
+    font-weight: bold;
+    color: var(--primary);
+    font-size: 0.7rem;
+}
+
+.sidebar_footer {
+    font-size: 0.6rem;
+}
+
+.sidebar_footer div :not(.border_mini) {
+    padding: 0.5rem;
+}
+
 .border_mini {
     border-bottom: 1px solid var(--sidebartext--);
+    width: 90%;
     margin: auto;
 }
+
+
 
 .app_body {
     background-color: var(--body--);
