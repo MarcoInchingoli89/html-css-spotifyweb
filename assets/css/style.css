@@ -79,7 +79,7 @@ body {
 
 .sidebar_header .sidebar_menu img {
     width: 2.3rem;
-    padding: 0.5rem;
+    padding: 0.2rem;
     filter: invert(0.5);
     vertical-align: middle;
 }
@@ -88,6 +88,7 @@ body {
     flex-direction: column;
     gap: 0.8rem;
     padding-left: 0.8rem;
+    padding-top: 1rem;
 }
 
 .sidebar_playlist h5 {
@@ -151,6 +152,37 @@ body {
     background-color: var(--player);
 }
 
+.play_now {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.play_now img {
+    width: 3.5rem;
+    padding-left: 0.5rem;
+}
+
+.album_details {
+    padding-right: 2rem;
+}
+
+.album_details h5 {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.album_details span {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--sidebartext--);
+}
+
+.play_now i {
+    color: var(--sidebartext--);
+}
+
 .player .play_now, .volume {
     flex-grow: 1;
 }
@@ -166,18 +198,13 @@ footer {
 
 /* Debug */
 
-/* .debug .menu {
-    height: 50px;
-    background-color: darkgreen;
-} */
-
 .debug [class^="col"] {
     margin: 2rem 1rem;
     height: 250px;
     border: 1px solid red;
 }
 
-.debug .player {
+/* .debug .player {
     height: 100px;
     width: 100%;
 }
@@ -192,7 +219,7 @@ footer {
 
 .debug .volume {
     background-color: darkslategray;
-}
+} */
 
 
 
