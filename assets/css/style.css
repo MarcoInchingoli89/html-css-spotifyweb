@@ -27,6 +27,7 @@ body {
     --body--: #141922;
     --player: #282828;
     --sidebartext--: #5E6267;
+    --audio--: #C1C1C1;
     --primary: #FFFFFF;
 }
 
@@ -181,6 +182,31 @@ body {
 
 .play_now i {
     color: var(--sidebartext--);
+}
+
+.volume {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.volume i {
+    color: var(--primary);
+    font-size: 0.8rem;
+}
+
+.volume_bar {
+    height: 4px;
+    width: 100px;
+    margin-right: 0.5rem;
+    background-color: var(--sidebartext--);
+}
+
+.volume_bar .audio_volume {
+    height: 2px;
+    width: 20px;
+    background-color: var(--audio--);
 }
 
 .player .play_now, .volume {
