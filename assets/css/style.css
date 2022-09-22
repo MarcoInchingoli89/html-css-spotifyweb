@@ -149,6 +149,30 @@ body {
     font-weight: bold;
 }
 
+.title {
+    padding-left: 1rem;
+    padding-top: 2rem;
+    color: var(--primary);
+}
+
+.card {
+    text-align: center;
+}
+
+.card img {
+    width: 180px;
+}
+
+.col_2 .card h5 {
+    color: var(--primary);
+    font-weight: bold;
+    padding: 0.8rem;
+}
+
+.col_2 .card h6 {
+    color: var(--sidebartext--);
+}
+
 .player {
     background-color: var(--player);
 }
@@ -268,27 +292,10 @@ footer {
 
 /* Debug */
 
-.debug [class^="col"] {
+/* .debug [class^="col"] {
     margin: 2rem 1rem;
     height: 250px;
     border: 1px solid red;
-}
-
-/* .debug .player {
-    height: 100px;
-    width: 100%;
-}
-
-.debug .play_now {
-   background-color: darkmagenta;
-}
-
-.debug .control_panel {
-   background-color: darkorange;
-}
-
-.debug .volume {
-    background-color: darkslategray;
 } */
 
 
@@ -304,5 +311,5 @@ footer {
 }
 
 [class^="col"] {
-    margin: 2rem 1rem;
+    margin: 1.8rem 0.4rem;
 }
