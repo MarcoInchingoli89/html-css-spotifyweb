@@ -184,15 +184,59 @@ body {
     color: var(--sidebartext--);
 }
 
+.control_panel {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.control_panel .control {
+    color: var(--primary);
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.control_panel .control .play {
+    font-size: 2rem;
+}
+
+.control_panel .control i {
+    font-size: 1rem;
+    padding: 0 1.5rem;
+}
+
+.duration {
+    align-items: center;
+    margin: 0 1rem;
+    padding-bottom: 0.8rem;
+}
+
+.duration_bar {
+    height: 4px;
+    width: 500px;
+    background-color: var(--sidebartext--);
+}
+
+.time {
+    font-size: 0.6rem;
+    color: var(--primary);
+    padding: 0 0.5rem;
+}
+
+.time_left {
+    height: 4px;
+    width: 100px;
+    background-color: var(--audio--);
+}
+
 .volume {
-    display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 1rem;
 }
 
 .volume i {
-    color: var(--primary);
+    color: var(--audio--);
     font-size: 0.8rem;
 }
 
@@ -204,7 +248,7 @@ body {
 }
 
 .volume_bar .audio_volume {
-    height: 2px;
+    height: 4px;
     width: 20px;
     background-color: var(--audio--);
 }
