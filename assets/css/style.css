@@ -96,12 +96,33 @@ body {
     font-size: 0.7rem;
 }
 
-.sidebar_footer {
-    font-size: 0.6rem;
+.sidebar_playlist i {
+    color: var(--sidebartext--);
+    font-size: 2rem;
+    vertical-align: middle;
+    padding-right: 0.2rem;
 }
 
-.sidebar_footer div :not(.border_mini) {
+.sidebar_footer {
+    font-size: 0.7rem;
+}
+
+.sidebar_footer .app_install, .john_doe {
     padding: 0.5rem;
+}
+
+.app_install i {
+    padding-right: 0.3rem;
+}
+
+.john_doe {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.john_doe i {
+    padding-right: 0.3rem;
+    font-size: 1rem;
 }
 
 .border_mini {
