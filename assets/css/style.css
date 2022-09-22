@@ -131,30 +131,32 @@ body {
     margin: auto;
 }
 
-
-
 .app_body {
     background-color: var(--body--);
     height: 100%;
     width: calc(100% - 200px);
-    overflow: auto;
+    overflow-y: auto;
 }
 
+.menu {
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 1rem;
+    color: var(--sidebartext--);
+    font-size: 0.7rem;
+    font-weight: bold;
+}
 
 .player {
     background-color: var(--player);
 }
 
-.player .play_now {
+.player .play_now, .volume {
     flex-grow: 1;
 }
 
 .player .control_panel {
     flex-grow: 2;
-}
-
-.player .volume {
-    flex-grow: 1;
 }
 
 footer {
@@ -164,20 +166,10 @@ footer {
 
 /* Debug */
 
-/* .debug .sidebar_body {
-    background-color: brown;
-    height: 50%;
-}
-
-.debug .sidebar_footer {
-    background-color: crimson;
-    height: 10%;
-} */
-
-.debug .menu {
+/* .debug .menu {
     height: 50px;
     background-color: darkgreen;
-}
+} */
 
 .debug [class^="col"] {
     margin: 2rem 1rem;
