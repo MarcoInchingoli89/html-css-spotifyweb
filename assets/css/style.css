@@ -35,6 +35,8 @@ body {
     --sidebartext--: #5E6267;
     --audio--: #C1C1C1;
     --primary: #FFFFFF;
+    --bordereffect--: #ADFF2F;
+
 }
 
 /* #endregion Colors Palette */
@@ -136,8 +138,8 @@ body {
 .btn {
     border-radius: 1.6rem;
     border: 1px solid var(--primary);
-    padding: 0 3rem;
-    line-height: 4;
+    padding: 0 1rem;
+    line-height: 3.5;
     font-weight: bold;
     font-size: 0.6rem;
     color: var(--primary);
@@ -338,6 +340,49 @@ footer {
 
 /* #endregion Utilities */
 
+/* #region Animation */
+
+.btn {
+    transition: transform .2s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.sidebar_menu .effect_border:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0);
+    color: var(--primary);
+    border-left: 2px solid var(--bordereffect--);
+}
+
+.enlight:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0);
+    color: var(--primary);
+}
+
+.app_body .menu span:hover {
+    
+    cursor: pointer;
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0);
+    color: var(--primary);
+    border-bottom: 2px solid var(--bordereffect--);
+}
+
+footer .play_now .album_details .enlight:hover {
+    text-decoration: underline;
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
+
+
+
+
+
 /* #region Responsive Layout */
 
 /* Medium */
@@ -474,3 +519,4 @@ footer {
     }
 }
 
+/* #endregion Responsive Layout */
