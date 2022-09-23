@@ -63,6 +63,10 @@ body {
     padding: 0.8rem;
 }
 
+.sidebar_header .mobile_logo {
+   display: none;
+}
+
 .sidebar_header .sidebar_menu img {
     padding: 0.2rem;
     margin-left: 0.5rem;
@@ -336,6 +340,7 @@ footer {
 
 /* #region Responsive Layout */
 
+/* Medium */
 @media screen and (max-width: 878px) {
     
     .sidebar_header .logo {
@@ -379,9 +384,12 @@ footer {
         width: 250px;
     }
 
-
+    .time_left {
+        width: 50px;
+    }
 }
 
+/* Small */
 @media screen and (max-width: 639px) {
     
     .app_body .col_2 {
@@ -405,9 +413,64 @@ footer {
     .duration_bar {
         width: 150px;
     }
+
+    .time_left {
+        width: 30px;
+    }
 }
 
+/* ExtraSmall */
 @media screen and (max-width: 552px) {
     
+    .sidebar {
+        width: 36px;
+    }
+
+    .sidebar_header .sidebar_menu img {
+        margin-left: 0;
+    }
+
+    .sidebar_header .logo {
+        display: none;
+    }
+
+    .sidebar_header .mobile_logo {
+        display: block;
+        padding-top: 0.3rem;
+        padding-left: 0.1rem;
+    }
+
+    .sidebar .sidebar_menu span, .sidebar_playlist {
+        display:  none;
+    }
+
+    .sidebar .sidebar_footer span, .border_mini {
+        display: none;
+    }
+
+    .app_install i {
+        padding-right: 0;
+        padding-left: 0.1rem;
+    }
+
+    .app_body {
+        width: calc(100% - 36px);
+    }
+
+    .app_body .col_2 {
+        width: calc((100% / 12) *5);
+    }
+
+    .control_panel .control i {
+        padding: 0 0.5rem;
+    }
+
+    .duration_bar {
+        width: 100px;
+    }
+
+    .time_left {
+        width: 30px;
+    }
 }
 
