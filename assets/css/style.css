@@ -230,6 +230,10 @@ footer {
     color: var(--sidebartext--);
 }
 
+.like_album i {
+    padding: 0.5rem;
+}
+
 .play_now i {
     color: var(--sidebartext--);
 }
@@ -354,6 +358,10 @@ footer {
         width: 2.5rem;
     }   
 
+    .album_details {
+        white-space: nowrap;
+    }
+
     .album_details h5 {
         font-size: 0.6rem;
         margin-bottom: -0.4rem;
@@ -376,6 +384,27 @@ footer {
 
 @media screen and (max-width: 639px) {
     
+    .app_body .col_2 {
+        width: calc((100% / 12) *4);
+    }
+
+    .album_details {
+        white-space: nowrap;
+        padding-right: 0;
+    }
+
+    .like_album {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .like_album i {
+        padding: 0.1rem;
+    }
+
+    .duration_bar {
+        width: 150px;
+    }
 }
 
 @media screen and (max-width: 552px) {
