@@ -79,8 +79,8 @@ body {
 }
 
 .sidebar_header .sidebar_menu img {
-    width: 2.3rem;
     padding: 0.2rem;
+    margin-left: 0.5rem;
     filter: invert(0.5);
     vertical-align: middle;
 }
@@ -155,12 +155,22 @@ body {
     color: var(--primary);
 }
 
+.subtitle {
+    color: var(--sidebartext--);
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+}
+
 .card {
     text-align: center;
 }
 
 .card img {
     width: 180px;
+}
+
+.popular_artists .col_2 .card img {
+    border-radius: 50%;
 }
 
 .col_2 .card h5 {
@@ -312,4 +322,8 @@ footer {
 
 [class^="col"] {
     margin: 1.8rem 0.4rem;
+}
+
+.circle {
+    border-radius: 50%;
 }
