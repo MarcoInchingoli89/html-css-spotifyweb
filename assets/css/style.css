@@ -342,10 +342,34 @@ footer {
         flex-wrap: wrap;
     }
 
+    .app_body .menu {
+        gap: 2.8rem;
+    }
+
     [class^="col"] {
         margin: 1rem 0.8rem;
     }
 
+    .play_now img {
+        width: 2.5rem;
+    }   
+
+    .album_details h5 {
+        font-size: 0.6rem;
+        margin-bottom: -0.4rem;
+    }
+
+    .album_details span {
+        font-size: 0.6rem;
+    }
+
+    .control_panel .control i {
+        padding: 0 1rem;
+    }
+
+    .duration_bar {
+        width: 250px;
+    }
 
 
 }
