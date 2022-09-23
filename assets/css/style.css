@@ -184,7 +184,7 @@ body {
 .col_2 .card h5 {
     color: var(--primary);
     font-weight: bold;
-    padding: 0.8rem;
+    padding: 0.8rem 0;
 }
 
 .col_2 .card h6 {
@@ -315,6 +315,7 @@ footer {
 
 /* #region Utilities */
 
+
 .d-flex {
     display: flex;
 }
@@ -328,3 +329,32 @@ footer {
 }
 
 /* #endregion Utilities */
+
+/* #region Responsive Layout */
+
+@media screen and (max-width: 878px) {
+    
+    .sidebar_header .logo {
+        width: 8rem;
+    }
+
+    .app_body .menu, .recently_played {
+        flex-wrap: wrap;
+    }
+
+    [class^="col"] {
+        margin: 1rem 0.8rem;
+    }
+
+
+
+}
+
+@media screen and (max-width: 639px) {
+    
+}
+
+@media screen and (max-width: 552px) {
+    
+}
+
