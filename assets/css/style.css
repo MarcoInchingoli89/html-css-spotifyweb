@@ -183,6 +183,10 @@ body {
     width: 180px;
 }
 
+.play_overlay {
+    display: none;
+}
+
 .popular_artists .col_2 .card img {
     border-radius: 50%;
 }
@@ -379,9 +383,7 @@ footer .play_now .album_details .enlight:hover {
     cursor: pointer;
 }
 
-
-
-
+/* #endregion Animation */
 
 /* #region Responsive Layout */
 
